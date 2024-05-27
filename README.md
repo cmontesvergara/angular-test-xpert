@@ -2,6 +2,9 @@
 
 Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cli) versión 18.0.1.
 
+## Teoria
+
+[Respuesta](Respuesta-Modelo-Dreyfus.pdf) a preguntas del Modelo Dreyfus.
 ## Requisitos
 
 Asegúrate de tener instalados los siguientes programas:
