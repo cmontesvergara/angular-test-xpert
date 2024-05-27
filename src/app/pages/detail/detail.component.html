@@ -1,0 +1,130 @@
+
+<section class="bg-gray-100">
+  <div class="flex">
+  <div  class="max-w-4xl mx-auto my-10 bg-white rounded-xl shadow-md overflow-hidden">
+    <carousel [data]="breedData.images"/>
+      <!-- <div class="p-6">
+          <h2 class="text-2xl font-bold mb-2">{{ breedData.name }}</h2>
+          <p class="text-gray-700 mb-4">{{ breedData.description }}</p>
+          <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-2">General Info</h3>
+              <ul class="list-disc list-inside text-gray-700">
+                  <li><strong>Weight:</strong> {{ breedData.weight.imperial }} lbs (Imperial), {{ breedData.weight.metric }} kg (Metric)</li>
+                  <li><strong>Origin:</strong> {{ breedData.origin }}</li>
+                  <li><strong>Life Span:</strong> {{ breedData.life_span }} years</li>
+                  <li><strong>Indoor:</strong> {{ breedData.indoor ? 'Yes' : 'No' }}</li>
+                  <li><strong>Lap Cat:</strong> {{ breedData.lap ? 'Yes' : 'No' }}</li>
+                  <li><strong>Temperament:</strong> {{ breedData.temperament }}</li>
+              </ul>
+          </div>
+          <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-2">Adaptability</h3>
+              <ul class="list-disc list-inside text-gray-700">
+                  <li><strong>Adaptability:</strong> {{ breedData.adaptability }}</li>
+                  <li><strong>Affection Level:</strong> {{ breedData.affection_level }}</li>
+                  <li><strong>Child Friendly:</strong> {{ breedData.child_friendly }}</li>
+                  <li><strong>Dog Friendly:</strong> {{ breedData.dog_friendly }}</li>
+                  <li><strong>Energy Level:</strong> {{ breedData.energy_level }}</li>
+                  <li><strong>Grooming:</strong> {{ breedData.grooming }}</li>
+                  <li><strong>Health Issues:</strong> {{ breedData.health_issues }}</li>
+                  <li><strong>Intelligence:</strong> {{ breedData.intelligence }}</li>
+                  <li><strong>Shedding Level:</strong> {{ breedData.shedding_level }}</li>
+                  <li><strong>Social Needs:</strong> {{ breedData.social_needs }}</li>
+                  <li><strong>Stranger Friendly:</strong> {{ breedData.stranger_friendly }}</li>
+                  <li><strong>Vocalisation:</strong> {{ breedData.vocalisation }}</li>
+              </ul>
+          </div>
+          <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-2">Traits</h3>
+              <ul class="list-disc list-inside text-gray-700">
+                  <li><strong>Experimental:</strong> {{ breedData.experimental ? 'Yes' : 'No' }}</li>
+                  <li><strong>Hairless:</strong> {{ breedData.hairless ? 'Yes' : 'No' }}</li>
+                  <li><strong>Natural:</strong> {{ breedData.natural ? 'Yes' : 'No' }}</li>
+                  <li><strong>Rare:</strong> {{ breedData.rare ? 'Yes' : 'No' }}</li>
+                  <li><strong>Rex:</strong> {{ breedData.rex ? 'Yes' : 'No' }}</li>
+                  <li><strong>Suppressed Tail:</strong> {{ breedData.suppressed_tail ? 'Yes' : 'No' }}</li>
+                  <li><strong>Short Legs:</strong> {{ breedData.short_legs ? 'Yes' : 'No' }}</li>
+                  <li><strong>Hypoallergenic:</strong> {{ breedData.hypoallergenic ? 'Yes' : 'No' }}</li>
+              </ul>
+          </div>
+          <div class="mb-4">
+              <h3 class="text-xl font-semibold mb-2">Links</h3>
+              <ul class="list-disc list-inside text-blue-500">
+                  <li><a [href]="breedData.cfa_url" target="_blank">CFA</a></li>
+                  <li><a [href]="breedData.vetstreet_url" target="_blank">Vetstreet</a></li>
+                  <li><a [href]="breedData.vcahospitals_url" target="_blank">VCA Hospitals</a></li>
+                  <li><a [href]="breedData.wikipedia_url" target="_blank">Wikipedia</a></li>
+              </ul>
+          </div>
+      </div> -->
+
+
+
+<div class="p-8 bg-white shadow-xl rounded-lg">
+    <h2 class="text-3xl font-extrabold mb-4 text-center text-gray-800">{{ breedData.name }}</h2>
+    <p class="text-lg text-gray-600 mb-6 text-justify">{{ breedData.description }}</p>
+
+    <div class="mb-6">
+        <h3 class="text-2xl font-semibold mb-3 text-gray-800">General Info</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li><strong>Weight:</strong> {{ breedData.weight.imperial }} lbs (Imperial), {{ breedData.weight.metric }} kg (Metric)</li>
+            <li><strong>Origin:</strong> {{ breedData.origin }}</li>
+            <li><strong>Life Span:</strong> {{ breedData.life_span }} years</li>
+            <li><strong>Indoor:</strong> {{ breedData.indoor ? 'Yes' : 'No' }}</li>
+            <li><strong>Lap Cat:</strong> {{ breedData.lap ? 'Yes' : 'No' }}</li>
+            <li><strong>Temperament:</strong> {{ breedData.temperament }}</li>
+        </ul>
+    </div>
+    <div class="flex justify-between p-4">
+      <div class="mb-6">
+        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Adaptability</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li><strong>Adaptability:</strong> {{ breedData.adaptability }}</li>
+            <li><strong>Affection Level:</strong> {{ breedData.affection_level }}</li>
+            <li><strong>Child Friendly:</strong> {{ breedData.child_friendly }}</li>
+            <li><strong>Dog Friendly:</strong> {{ breedData.dog_friendly }}</li>
+            <li><strong>Energy Level:</strong> {{ breedData.energy_level }}</li>
+            <li><strong>Grooming:</strong> {{ breedData.grooming }}</li>
+            <li><strong>Health Issues:</strong> {{ breedData.health_issues }}</li>
+            <li><strong>Intelligence:</strong> {{ breedData.intelligence }}</li>
+            <li><strong>Shedding Level:</strong> {{ breedData.shedding_level }}</li>
+            <li><strong>Social Needs:</strong> {{ breedData.social_needs }}</li>
+            <li><strong>Stranger Friendly:</strong> {{ breedData.stranger_friendly }}</li>
+            <li><strong>Vocalisation:</strong> {{ breedData.vocalisation }}</li>
+        </ul>
+    </div>
+
+    <div class="mb-6">
+        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Traits</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li><strong>Experimental:</strong> {{ breedData.experimental ? 'Yes' : 'No' }}</li>
+            <li><strong>Hairless:</strong> {{ breedData.hairless ? 'Yes' : 'No' }}</li>
+            <li><strong>Natural:</strong> {{ breedData.natural ? 'Yes' : 'No' }}</li>
+            <li><strong>Rare:</strong> {{ breedData.rare ? 'Yes' : 'No' }}</li>
+            <li><strong>Rex:</strong> {{ breedData.rex ? 'Yes' : 'No' }}</li>
+            <li><strong>Suppressed Tail:</strong> {{ breedData.suppressed_tail ? 'Yes' : 'No' }}</li>
+            <li><strong>Short Legs:</strong> {{ breedData.short_legs ? 'Yes' : 'No' }}</li>
+            <li><strong>Hypoallergenic:</strong> {{ breedData.hypoallergenic ? 'Yes' : 'No' }}</li>
+        </ul>
+    </div>
+
+    <div class="mb-6">
+      <h3 class="text-2xl font-semibold mb-3 text-gray-800">Links</h3>
+      <ul class="list-disc list-inside text-blue-500 space-y-2">
+        <li><a [href]="breedData.cfa_url" target="_blank" class="hover:underline">CFA</a></li>
+        <li><a [href]="breedData.vetstreet_url" target="_blank" class="hover:underline">Vetstreet</a></li>
+        <li><a [href]="breedData.vcahospitals_url" target="_blank" class="hover:underline">VCA Hospitals</a></li>
+        <li><a [href]="breedData.wikipedia_url" target="_blank" class="hover:underline">Wikipedia</a></li>
+    </ul>
+</div>
+
+    </div>
+
+
+
+</div>
+    </div>
+
+
+</div>
+</section>
