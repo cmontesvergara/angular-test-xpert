@@ -1,0 +1,35 @@
+<div class="relative">
+  <div class="overflow-hidden">
+    <div #carousel class="flex transition-transform duration-500 ease-in-out">
+      @for (image of data; track image.id) {
+      <div class="w-full shrink-0">
+        <img
+          [src]="image.url"
+          alt="Imagen 1"
+          class="w-full max-h-[600px] object-scale-down"
+        />
+      </div>
+      }
+    </div>
+  </div>
+  <div
+    class="absolute bottom-4 transform -translate-y-2/3 left-6 cursor-pointer"
+  >
+    <button
+      (click)="back()"
+      class="bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-700"
+    >
+      Anterior
+    </button>
+  </div>
+  <div
+    class="absolute bottom-4 transform -translate-y-2/3 right-6 cursor-pointer"
+  >
+    <button
+      (click)="next()"
+      class="bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-700"
+    >
+      Siguiente
+    </button>
+  </div>
+</div>
