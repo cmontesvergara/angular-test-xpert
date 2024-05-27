@@ -1,0 +1,32 @@
+@if (cardData) {
+<div class="flex items-center p-4 bg-white rounded-lg shadow-md">
+  @if (cardData.imagePath) {
+
+  <img
+    [src]="cardData.imagePath"
+    alt="Imagen"
+    class="w-20 h-20 rounded-full mr-4"
+  />
+  } @else {
+
+  <img
+    [src]="placeholderImagePath"
+    alt="Imagen"
+    class="w-20 h-20 rounded-full mr-4"
+  />
+  }
+  <div>
+    <h3 class="text-lg font-medium text-gray-800 mb-2">{{ cardData.name }}</h3>
+    <p class="text-gray-600">{{ cardData.description }}</p>
+    <div class="flex w-full justify-end">
+     <button
+    (click)="goToDetail()"
+      class="w-fit text-blue-500 font-bold py-2 px-4 rounded "
+    >
+      Ver más
+    </button>
+    </div>
+
+  </div>
+</div>
+}
